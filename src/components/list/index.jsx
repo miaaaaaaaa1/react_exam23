@@ -8,26 +8,24 @@ const List = () =>{
     return (
        
         <Fragment>
-            <h2>List</h2>
-            {list.length === 0 ?
-                <p>List is empty</p>
-            : (
+            <h2>Done</h2>
+            {
+            list.length === 0 ? <p>List is empty</p> : (
                 <ul>
-                    {list.map((item) => (
+                    {list.map((item) => 
+                    (
                         <li key={item.id}>
                             {item.name}
                             <button onClick={() => dispatch({type: 'REMOVE_FROM_LIST', payload: item.id})}>Remove</button>
                         </li>
-                    ))}
+                    )
+                    )}
                 </ul>
             )}
            
             <button onClick={() => dispatch({type: 'CLEAR_LIST'})}>Clear List</button>
  
-        </Fragment>
- 
-       
-       
+        </Fragment> 
     )
 }
  
