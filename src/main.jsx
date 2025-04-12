@@ -7,7 +7,7 @@ import list from './list'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider list={list}>
+    <Provider store={list}>
     <App />
     </Provider>
   </StrictMode>,

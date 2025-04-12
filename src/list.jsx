@@ -1,4 +1,4 @@
-import {CreateStore} from "redux";
+import {createStore} from "redux";
 
 const initialState = {
     list : []
