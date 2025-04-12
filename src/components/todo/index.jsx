@@ -5,7 +5,7 @@ const todo = [
     {id: 2, name: 'Do my hw'},
     {id: 3, name: 'Iron my clothes'}
 ];
- 
+ console.log("ello")
  
 const Todo = ()=>{
     const dispatch = useDispatch();
